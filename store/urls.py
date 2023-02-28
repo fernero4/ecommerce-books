@@ -8,7 +8,7 @@ app_name = 'store'
 urlpatterns = [
     path('', views.All_products, name='All_products'),
     path('<slug:slug>/', views.Product_detail, name='Product_detail'),
-    path('search/<slug:category_slug>/',
+    path('shop/<slug:category_slug>/',
          views.Category_list, name='Category_list'),
 
 ]
